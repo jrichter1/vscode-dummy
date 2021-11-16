@@ -41,5 +41,13 @@ jobs:
         with: 
           name: vsix
           path: ./*.vsix
+
       - name: Run UI tests
         run: xvfb-run -a npm run ui-test
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with: 
+          name: screenshots
+          path: test-resources/screenshots/*.png
