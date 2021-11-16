@@ -2,3 +2,5 @@ node_modules
 .vscode-test
 out
 *.vsix
+.nyc_output
+coverage
