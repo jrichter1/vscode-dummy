@@ -41,3 +41,5 @@ jobs:
         with: 
           name: vsix
           path: ./*.vsix
+      - name: Run UI tests
+        run: xvfb-run -a npm run ui-test
