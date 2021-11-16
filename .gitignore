@@ -4,3 +4,4 @@ out
 *.vsix
 .nyc_output
 coverage
+test-resources
