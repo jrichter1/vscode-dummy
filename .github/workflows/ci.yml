@@ -34,7 +34,7 @@ jobs:
           npm i -g vsce
 
       - name: Build extension
-        run: vsce package
+        run: xvfb-run -a vsce package
 
       - name: Upload build
         uses: actions/upload-artifact@v2
